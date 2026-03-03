@@ -1,0 +1,10 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "build": {
+    "builder": "DOCKERFILE"
+  },
+  "deploy": {
+    "startCommand": "/bin/sh -c \"streamlit run app.py --server.port ${PORT:-8080} --server.address 0.0.0.0 --server.headless true\"",
+    "healthcheckPath": "/_stcore/health"
+  }
+}

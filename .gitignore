@@ -1,0 +1,33 @@
+# Environment and secrets
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# Database and data
+*.db
+leads.db
+data/
+
+# Logs
+logs/
+*.log
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+
+# Build and deploy
+dist/
+build/
+*.egg-info/
